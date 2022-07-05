@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        article
+        {
+            border: 5px solid #D15D42;
+        }
+
+        div
+        {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 4px solid #822D1A;
+            line-height: 200px;
+            text-align: center;
+        }
+
+        /*DESPLIEGUE EN BLOQUE*/
+        .Bloque div
+        {
+            display: block;
+        }
+
+        /*DESPLIEGUE EN LINEA*/
+        .Enlinea div
+        {
+            display: inline;
+            display: inline-block;
+        }
+
+        /*DESPLIEGUE EN TABLA*/
+        .Entabla div
+        {
+            display: table-cell;
+        }
+
+        /*POSICIONAMIENTO RELATIVO*/
+        #relativo
+        {
+            position: relative; 
+            left: 300px
+        }
+
+        /*POSICIONAMIENTO ABSOLUTO*/
+        #absoluto
+        {
+            position: absolute;
+            right: 50px;
+        }
+
+        /*POSICIONAMIENTO FIJO*/
+        #fijo
+        {
+          position: fixed;
+          background-color: #822D1A;
+          right: 100px;
+          top: 50px; 
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <h1>ELEMENTOS EN BLOQUE</h1>
+    <article class="Bloque">
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+
+    <h1>ELEMENTOS EN LINEA</h1>
+    <article class="Enlinea">
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+
+    <h1>ELEMENTOS EN TABLA</h1>
+    <article class="Entabla">
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+
+    
+    <h1>ELEMENTOS EN POSICIONAMIENTO</h1>
+    <article class="Enposicionamiento">
+        <div>RELATIVO</div>
+        <div>ABSOLUTO</div>
+        <div>FIJO</div>
+    </article>
+
+
+
+    
+</body>
+</html>
