@@ -11,19 +11,20 @@
         {
             width: 23%;
             height: 400px;
-            background-color: aquamarine;
+            background-color: #DF5E41 ;
             float: left;
             margin: 10px;
-            /*DECLARAR FLEXBOX*/
+
+            /*APLICANDO FLEXBOX*/
             display: flex;
+            flex-direction: row;
         }
 
 
         .items
         {
-            background-color: rgb(95, 7, 7);
+            background-color: #822D1A;
             width: 100px;
-            height: 100px;
             margin: 10px;
             text-align: center;
             line-height: 100px;
@@ -31,61 +32,67 @@
         }
 
 
-        /* DIRECCION FLEXBOX*/
+        /* ALINEANDO ALEMENTOS EJE PREINCIPAL Y SECUNDARIOS*/
         .c1
         {
-          /*  flex-direction: column;
-            flex-wrap: wrap;*/
-            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
         } 
 
         .c2
         {
-            flex-flow: column-reverse wrap-reverse;
+            justify-content: space-around;
+            align-items: flex-start;
         }
 
         .c3
         {
-           flex-flow: row wrap; 
+            justify-content: space-between;
+            align-items: flex-end;
         }
 
         .c4
         {
-            flex-flow: row-reverse wrap-reverse;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+
+        .c5
+        {
+            justify-content: flex-end;
+            align-items: stretch;
         }
 
     </style>
 
+
 </head>
 <body>
-
     <div class="contenedor c1">
         <div class="intems">1</div>
         <div class="intems">2</div>
-        <div class="intems">3</div>
-        <div class="intems">4</div>
     </div>
 
     <div class="contenedor c2">
         <div class="intems">1</div>
         <div class="intems">2</div>
-        <div class="intems">3</div>
-        <div class="intems">4</div>
     </div>
 
     <div class="contenedor c3">
         <div class="intems">1</div>
         <div class="intems">2</div>
-        <div class="intems">3</div>
-        <div class="intems">4</div>
     </div>
 
     <div class="contenedor c4">
         <div class="intems">1</div>
         <div class="intems">2</div>
-        <div class="intems">3</div>
-        <div class="intems">4</div>
     </div>
+
     
+    <div class="contenedor c5">
+        <div class="intems">1</div>
+        <div class="intems">2</div>
+    </div>
+
 </body>
 </html>
