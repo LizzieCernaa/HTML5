@@ -12,4 +12,6 @@
 
 .grid .header{
     background: #6C26B0;
+    grid-column-start: header;
+    grid-column-end: header;
 }
