@@ -8,3 +8,8 @@
    /* grid-auto-rows: 300px;
     grid-auto-flow: column;*/
 }
+
+.grid .span2
+{
+    background: #229954;
+}
