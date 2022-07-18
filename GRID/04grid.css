@@ -15,4 +15,6 @@
 .grid .elemento
 {
     background: #85929E ;
+    justify-self: start;
+    align-self: start;
 }
