@@ -6,5 +6,13 @@
     grid-template-rows: repeat(3, 200px);
 
     /* ALINEACION HORIZONTAL*/
+    justify-items: center;
+
     /* ALINEACION VERTICAL */
+    align-items: center;
+}
+
+.grid .elemento
+{
+    background: #85929E ;
 }
