@@ -1,0 +1,10 @@
+.grid
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+
+    /* ALINEACION HORIZONTAL*/
+    /* ALINEACION VERTICAL */
+}
