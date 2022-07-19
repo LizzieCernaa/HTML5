@@ -7,9 +7,18 @@
 
    /* grid-auto-rows: 300px;
     grid-auto-flow: column;*/
+
+    grid-auto-flow: dense;
 }
 
 .grid .span2
 {
     background: #229954;
+    grid-column: 3;
+}
+
+.grid .span3
+{
+    background: #4d0d8e;
+    grid-column: span 3;
 }
