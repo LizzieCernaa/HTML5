@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* PASO 1 KEY FRAME */
+        @keyframes cambiarColor
+        { 0%
+            {
+                background: #76448A ;
+            }
+
+            20%
+            {
+                background: #A04000 ;
+            }
+
+            40%
+            {
+                background: #34495E ;
+            }
+
+            60%
+            {
+                background: #148F77 ;
+            }
+
+            80% 
+            {
+                background: #EC7063 ;
+            }
+
+            100%
+            {
+                background: #1B4F72;
+            }
+
+        }
+
+        /* PASO 2 APLICAR PROPIEDADES DE ANIMACION */
+        .ani
+        {
+            width: 400px;
+            height: 400px;
+            background: gray;
+            margin: auto;
+            margin: 50px;
+            animation-name: cambiarColor;
+            animation-duration: 10s;
+            animation-delay: 0.5s;
+            animation-iteration-count: 2;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+
+            /* ATAJO*/
+            animation: cambiarColor 10s 0.5 2 normal forwards paused;
+        }
+
+        .ani:hover
+        {
+            animation-play-state: running;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="ani"></div>
+    
+</body>
+</html>
