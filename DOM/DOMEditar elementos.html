@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="lista">
+        <li id="uno">Alicia Elizabeth</li>
+        <li>Bucky Barnes</li>
+    </ol>
+
+    <script>
+        //Editar contenido 
+        var primerElemento = document.getElementById("uno");
+
+             //Metodo 1
+            //primerElemento.innerHTML = "Nuevo <i> Elemento </i>";
+
+            //Metodo 2
+            //primerElemento.textContent = "Nuevo <i> Elemento de texto </i> ";
+        
+
+        //Reemplazar elemento
+        var elemento = document.createElement("li");
+        var contenido = document.createTextNode("Lizzie");
+        elemento.appendChild(contenido);
+
+        var contenedor = document.getElementById("lista");
+        var posicion = document.getElementsByTagName("li")[1];
+
+        //contenedor.replaceChild(elemento, posicion);
+
+        //Eliminar elemento 
+        contenedor.removeChild(posicion);
+
+    </script>
+</body>
+</html>
