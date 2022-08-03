@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            width: 200px;
+            height: 200px;
+            background: #26cfcf;
+            transition: all 0.5s;
+        }
+
+        .grande
+        {
+            width: 500px;
+            height: 500px;
+            background: #cf26c1;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="accion();" cambio></button>
+    <br>
+    <div id="box" class="container"></div>
+
+    <script>
+        function accion()
+        {
+           //alert("Mi evento funciona");
+           var box = document.getElementById("box");
+
+           //box.style.background = "#cf26c1";
+           //box.className = "container grande";
+
+           if(box.className == "container")
+           {
+              box.className = "container grande";
+           }
+
+           else 
+           {
+             box.className = "container";
+           }
+
+        } 
+    </script>
+    
+</body>
+</html>
