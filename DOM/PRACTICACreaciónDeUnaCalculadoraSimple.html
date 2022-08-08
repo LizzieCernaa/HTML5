@@ -85,7 +85,7 @@
         .result p 
         {
             color: #fff;
-            font-size: 400px;
+            font-size: 100px;
             font-weight: 700;
         }
 
@@ -111,16 +111,38 @@
     </div>
 
     <script type="text/javascript">
-        var operaciones = function()
+        var operaciones = function(e)
         {
             //alert("Mi evento funciona");
-            var numero1 = document.getElementById("");
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var result = document.getElementById("resultado");
+            var operacion = e.target.id;
+
+            if (operacion == "suma") 
+            {
+                var resultado  = numero1 + numero2;
+            }
+            else if (operacion == "resta")
+            {
+                var resultado  = numero1 - numero2;
+            }
+            else if (operacion == "multipliCa") 
+            {
+                var resultado  = numero1 * numero2;  
+            }
+            else if (operacion == "divide") 
+            {
+                var resultado  = numero1 / numero2;  
+            }
+
+            result.innerHTML = resultado;
         }
 
 
         //Obtenemos el evento click en cada boton
-        var boton = document.getElementById("suma");
-        boton.addEventListener("click", operaciones);
+        var boton = document.getElementById("btns");
+        botones.addEventListener("click", operaciones);
     </script>
 
 
