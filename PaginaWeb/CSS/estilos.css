@@ -51,4 +51,18 @@ body
     padding: 15px 30px;
     outline: none;
     border: 2px solid var(--color-primario);
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    transition: all 0.3s;
+}
+
+.btn span
+{
+    padding-left: 10px;
+}
+
+.btn:hover
+{
+    padding: 15px 45px ;
 }
