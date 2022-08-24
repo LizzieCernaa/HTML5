@@ -199,8 +199,9 @@ body
 .slider 
 {
     display: flex;
-   /*overflow: hidden; */
+    overflow: hidden;
     height: calc(100vh - 80px);
+    scroll-behavior: smooth;
 }
 
 .container-productos
@@ -235,21 +236,20 @@ body
 {
     color: var(--color-texto);
     font-style: italic;
-
     text-align: justify;
 }
 
 .imagen-productos
 {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
 }
 
 .imagen-productos img 
 {
-    width: 100%;
-    transform: scale(1.1);
+    width: 70%;
+    transform: scale(1.0);
     transition: all 0.3s;
 }
 
