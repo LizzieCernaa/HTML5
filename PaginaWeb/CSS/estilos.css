@@ -407,7 +407,7 @@ body
         margin-top: 50px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "ingredientes  rapidez"
-                             "Calidad       delivery";
+                            "Calidad       delivery";
     }
 
     .imagen-central
