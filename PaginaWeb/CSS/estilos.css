@@ -258,6 +258,128 @@ body
     transform: scale(1.15);
 }
 
+/* SECCION SERVICIOS */
+#servicios
+{
+    height: 100vh;
+    background: #fff;
+    padding: 40px;
+}
+
+.servicios-titulos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.servicios-container
+{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+    grid-template-areas: "Ingredientes      imagen      rapidez"
+                         "Calidad           imagen     Delivery";
+}
+
+.Calidad 
+{
+    grid-row: Calidad;
+    grid-column: Calidad ;
+}
+
+.Ingredientes
+{
+    grid-row: Ingredientes;
+    grid-column: Ingredientes;
+}
+
+.rapidez
+{
+    grid-row: rapidez;
+    grid-column: rapidez;
+}
+
+.Delivery
+{
+    grid-row: Delivery;
+    grid-column: Delivery;
+}
+
+.imagen-central
+{
+    grid-row: imagen;
+    grid-column: imagen;
+    transition: all 0.5s;
+}
+
+.imagen-central:hover
+{
+    transform: scale(1.1);
+}
+
+.items
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items samp
+{
+    width: 95px;
+    font-size: 40px;
+    color: var(--color-secundario);
+    padding: 20px;
+    border: 5px double #dedede;
+    border-radius: 50%;
+    transition: all 0.5s  ;
+}
+
+.items span:hover
+{
+    background-color: var(--color-secundario);
+    color: #fff; 
+}
+
+.Ingredientes span,
+.Calidad span
+{
+    color: var(--color-primario);
+}
+
+.Ingredientes span:hover,
+.Calidad span:hover
+{
+    color: #FFF;
+    background: var(--color-primario);
+}
+
+.items .items-item
+{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.items .texto-item
+{
+    font-size: 14px;
+    color: var(--color-texto);
+    text-align: center;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+
+
+
+
 
 /*MEDIA QUERYS*/
 
