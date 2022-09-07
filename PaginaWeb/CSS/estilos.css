@@ -757,4 +757,20 @@ body
     {
         display: none;
     }
+
+    /* CONTACTOS */
+    #formulario
+    {
+        width: 100%;
+    }
+
+    .two-fiels
+    {
+        flex-direction: column;
+    }
+
+    .inputConIcon 
+    {
+        width: 100%;
+    }
 }
