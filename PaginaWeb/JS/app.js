@@ -38,3 +38,32 @@ var contenedor = document.querySelector('.slider'),
      contenedor.scrollLeft -= contenedor.offsetWidth;
     });
     
+
+// VALIDACION DE FORMULARIO
+var formulario = document.getElementById("formulario");
+    function validar(e) 
+    {
+        var inputNombre = document.getElementById("nombre"),
+            inputEmail = document.getElementById("email"),
+           inputComents = document.getElementById("comentarios");
+
+           if (inputNombre.value == 0 || inputEmail.value == 0 || inputComents.value == 0 ) 
+           {
+              e.preventDefault();
+              alert("Datos vacios");
+           }
+
+           else
+           {
+            e.preventDefault();
+            alert("Datos enviados");
+            inputNombre = "";
+            inputEmail = "";
+            inputComents = "";
+           }
+    }
+
+
+
+// EVENTOS DEL FORMULARIO
+formulario.addEventListener("submit", validar);
