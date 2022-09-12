@@ -22,9 +22,6 @@ html
     scroll-behavior: smooth;
 }
 
-
-
-
 body
 {
     background: var(--color-background);
@@ -84,14 +81,14 @@ body
     align-items: center;
     height: 75px;
     padding: 0 30px;
-    margin: 10px;
+    margin-top: 10px;
     background: var(--color-background);
     z-index: 1;
 }
 
 .logo img
 {
-    width: 109px;
+    width: 130px;
     cursor: pointer;
 }
 
@@ -216,7 +213,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 80%;
+    flex-basis: 100%;
     flex-shrink: 0;
 }
 
@@ -248,14 +245,14 @@ body
 
 .imagen-productos
 {
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
 }
 
 .imagen-productos img 
 {
-    width: 70%;
+    width: 50%;
     transform: scale(1.0);
     transition: all 0.3s;
 }
@@ -288,8 +285,8 @@ body
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-gap: 30px;
-    grid-template-areas: "Ingredientes      imagen      rapidez"
-                         "Calidad           imagen     Delivery";
+    grid-template-areas:     "ingredientes  imagen    rapidez"
+                             "calidad       imagen    delivery";
 }
 
 .Calidad 
@@ -328,60 +325,57 @@ body
     transform: scale(1.1);
 }
 
-.items
-{
+.items{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.items samp
-{
+.items span{
     width: 95px;
     font-size: 40px;
     color: var(--color-secundario);
     padding: 20px;
     border: 5px double #dedede;
     border-radius: 50%;
-    transition: all 0.5s  ;
+    text-align: center;
+    transition: all 0.5s;
 }
 
-.items span:hover
-{
-    background-color: var(--color-secundario);
-    color: #fff; 
+.items span:hover{
+    background: var(--color-secundario);
+    color: #FFF;
 }
 
-.Ingredientes span,
-.Calidad span
-{
+.ingredientes span, 
+.calidad span{
     color: var(--color-primario);
 }
 
-.Ingredientes span:hover,
-.Calidad span:hover
-{
-    color: #FFF;
+.ingredientes span:hover, 
+.calidad span:hover{
     background: var(--color-primario);
+    color: #FFF;
 }
 
-.items .items-item
-{
+.items .titulo-item{
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
     text-align: center;
 }
 
-.items .texto-item
-{
+.items .texto-item{
     font-size: 14px;
     color: var(--color-texto);
     text-align: center;
     font-style: italic;
     padding: 0 20px;
 }
+
+
+
 
 /* SECCION DE EQUIPO */
 
@@ -777,6 +771,54 @@ footer
 }
 
 
+/* BOTON DE IR ARRIBA */
+#btn-top 
+{
+    width: 50px;
+    height: 50px;
+    background: var(--color-primario);
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(200%);
+    transition: all 0.5s;
+}
+
+#btn-top.show
+{
+   transform: translateY(0);
+}
+
+#btn-top.scrollFinal
+{
+    transform: translateY(-250%);
+}
+
+#btn-top span 
+{
+    color: #fff;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s;
+}
+
+#btn-top:hover
+{
+  background: #e29727;
+}
+
+#btn-top:hover span
+{
+    transform: translateY(-3px);
+}
+
+
+
+
 
 
 /*MEDIA QUERYS*/
@@ -939,5 +981,11 @@ footer
     .sociales-metodo
     {
         width: 50%;
+    }
+
+    /* BOTON DE IR ARRIBA */
+    #btn-top
+    {
+        display: none;
     }
 }
